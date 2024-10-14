@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="inputs">
+        <form id="billForm">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" required>
+            <label for="dish">Dish</label>
+            <input type="text" name="dish" id="dish" required>
+            <label for="table">Table</label>
+            <select name="table" id="table" required>
+                <option value="table1">Table 1</option>
+                <option value="table2">Table 2</option>
+                <option value="table3">Table 3</option>
+            </select>
+            <input type="submit" value="Add Bill" />
+        </form>
+    </div>
+    <div class="output">
+        <div class="table1">
+            <h1>Table 1</h1>
+            <ul class="table_1_list"></ul>
+        </div>
+        <div class="table2">
+            <h1>Table 2</h1>
+            <ul class="table_2_list"></ul>
+        </div>
+        <div class="table3">
+            <h1>Table 3</h1>
+            <ul class="table_3_list"></ul>
+        </div>
+    </div>
+</body>
+</html>
